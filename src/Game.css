@@ -1,0 +1,233 @@
+/* Page styling */
+.title {
+    text-shadow: 2px 2px 3px black;
+}
+
+
+/* text styling */
+p {
+    color: white;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+p1 {
+    color: white;
+    font-size: medium;
+    font-style: italic;
+}
+
+
+/* Timer */
+.timer {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: right;
+    margin-right: 54px;
+    transition: 0.5s all;
+}
+
+.timer:hover {
+    color: #cc1e1e;
+    font-size: 20.5px;
+}
+
+
+/* Panes page styling */
+.splitScreen {
+    display: flex;
+    width: 100%;
+} 
+
+.column {
+    text-align: center;
+    margin: 10px;
+    background-color: #004b3a;
+    border-color: #fcce2d;
+}
+
+.green_back {
+    background-color: #004b3a;
+}
+
+
+/* left pane styling */
+.leftPane {
+    width: 50%;
+    background-color: #004b3a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gridContainerLeft {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    margin: 20px;
+    background-color: #004b3a;
+}
+
+.cardContainer {
+    background-color: #004b3a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: auto;
+    font-weight: bold;
+    color: white;
+    height: 100%;
+    width: 100%;
+}
+
+
+/* right pane styling */
+.rightPane {
+    width: 50%;
+    background-color: #004b3a;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.gridContainerRight {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto auto auto;
+    gap: 15px;
+    margin: 20px;
+    position: sticky;
+    top: 0;
+    background-color: #004b3a;
+}
+
+.blankRowA {
+    background-color: #004b3a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: auto;
+    font-weight: bold;
+    color: white;
+    height: 400px;
+    width: 45vw;
+}
+
+.blankRowB {
+    background-color: #004b3a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 75px;;
+    width: 45vw;
+    font-size:larger;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.blankRowC {
+    background-color: #004b3a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: auto;
+    font-weight: bold;
+    color: white;
+    height: 75px;
+    width: 45vw;
+}
+
+.gameButtonContainer {
+    background-color: #004b3a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: auto;
+    font-weight: bold;
+    color: white;
+    height: 5vw;
+    width: 15vw;
+    border-radius: 5px;
+}
+
+
+/* button styling */
+.gameButton {
+    color: white;
+    align-items: center;
+    cursor: pointer;
+    font-size: auto;
+    border-radius: 10px;
+    height: 75px;
+    width: 200px;
+    font-size:larger;
+    font-weight: 700;
+    font-style: normal;
+    box-shadow: (45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #211900 0 -3px 0 inset;
+    transition: 1s ease-in-out all;
+}
+
+.gameButton.higher {
+    background-color: black;
+    color: white;
+    
+}
+
+.higher:active {
+    transform: translateY(3px);
+}
+
+.higher:hover {
+    transform: translateY(-3px);
+}
+
+.lower:hover {
+    transform: translateY(-3px);
+}
+
+.lower:active {
+    transform: translateY(3px);
+}
+
+.gameButton.lower {
+    background-color: #cc1e1e;
+    color: white;
+}
+
+.gameButton.start {
+    background-color: #fcce2d;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%, +340%);
+}
+  
+.gameButton:disabled {
+    background-color: grey;
+    color: black;
+    cursor: not-allowed;
+}
+
+
+/* nav links styling */
+.nav-link {
+    color: white; 
+    text-decoration: underline; 
+}
+
+/* card styling */
+.cardImage {
+    max-width: 100%;
+    height: auto; 
+ }
+
+/* text styling */
+p {
+    color: white;
+    font-size: larger;
+    font-weight: bolder;
+}

@@ -1,0 +1,28 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+@import 'bulma/css/bulma.css';
+
+/* text styling */
+div {
+    background-color: #004b3a;
+    padding-bottom: 10px;
+}
+
+
+/* container/column styling */
+.column {
+    text-align: center;
+    margin: 10px;
+    background-color: white;
+}
+
+body {
+  margin: 0;
+  background-color: #004b3a;
+}
+
+
+/* nav links styling */
+.nav-link {
+    color: white; 
+    text-decoration: underline; 
+  } 

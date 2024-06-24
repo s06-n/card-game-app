@@ -1,0 +1,100 @@
+.title {
+  text-align: center;
+}
+
+.leaderboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #ff6600;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+select,
+input[type="number"] {
+  padding: 10px;
+  margin: 5px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button[type="submit"],
+.clear-button {
+  background-color: #6f42c1;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.clear-button {
+  background-color: #cc1e1e;
+  margin-top: 10px;
+}
+
+.leaderboard-list {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.leaderboard-list li {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .leaderboard-list {
+    text-align: center;
+  }
+}
+
+.blink {
+  animation: blinkBackground 1s infinite;
+}
+
+@keyframes blinkBackground {
+  0%, 50% {
+    background-color: transparent; /* Makes the background transparent */
+  }
+  51%, 100% {
+    background-color: #ff8c00;
+  }
+}
+
+@media (max-width: 768px) {
+  .leaderboard-container.blink {
+    animation: blinkBackgroundMobile 1s infinite;
+  }
+}
+
+@keyframes blinkBackgroundMobile {
+  0%, 50% {
+    background-color: transparent; /* Makes the background transparent */
+  }
+  51%, 100% {
+    background-color: #ff8c00;
+  }
+}
+
+
+
+
+
+

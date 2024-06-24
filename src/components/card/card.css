@@ -1,0 +1,81 @@
+.card {
+    /* sizing */
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    /* styling */
+    border-radius: 20px;
+    border: 5px solid #fcce2d;
+    box-shadow: 0px 0px 15px #778429;
+    /* content  alignment */
+    position: relative;
+    user-select: none;
+    cursor: pointer;
+}
+
+.card-back,
+.card-front {
+    /* sizing */
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+    /* alignment */
+    position: absolute;
+    /* content alignment */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* content styling */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    background-color: white;
+}
+
+.card-front {
+    border-radius: 15px;
+    font-size: 5rem;
+    font-weight: bold;
+    color: #cc1e1e;
+
+}
+
+.card-back {
+    border-radius: 15px;
+    transform: rotateY(180deg);
+    font-size: 1rem;
+    color: #0F0D10;
+}
+
+/* flip transition */
+.flip-exit {
+    transform: rotateY(0deg);
+}
+
+.flip-exit-active {
+    transform: rotateY(180deg);
+    transition: transform 300ms;
+}
+
+.flip-exit-done {
+    transform: rotateY(180deg);
+    transition-timing-function: cubic-bexier(.57,.21,.69,1.25);
+}
+
+.flip-enter {
+    transform: rotateY(180deg);
+}
+
+.flip-enter-active {
+    transform: rotateY(360deg);
+    transition: transform 300ms;
+    transition-timing-function: cubic-bexier(.57,.21,.69,1.25);
+}
+
+.flip-enter-done {
+    transform: rotateY(0deg);
+}
