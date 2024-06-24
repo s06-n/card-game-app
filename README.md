@@ -1,4 +1,4 @@
-# Project 1 - Higher or Lower
+# Higher or Lower Card Game
 
 Higher or Lower is a card game application created using React and based on the British TV programme "Play Your Cards Right".
 
